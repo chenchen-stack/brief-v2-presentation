@@ -17,8 +17,16 @@ git remote add origin https://github.com/chenchen-stack/brief-v2-presentation.gi
 git push -u origin main
 ```
 
-3. 仓库 **Settings → Pages**：Source 选 **Deploy from a branch**，Branch **main** / **/ (root)**，保存。
-4. 约 1～2 分钟后访问：`https://chenchen-stack.github.io/brief-v2-presentation/`（公开仓库默认路径）。
+3. 开启站点（任选其一，不要两个混用）：
+   - **推荐**：仓库 **Settings → Pages → Build and deployment**，**Source** 选 **GitHub Actions**，保存。推送本仓库后，打开 **Actions** 页签，等 **Deploy GitHub Pages** 变绿。首次需在 **Settings → Actions → General** 里允许 **Read and write** 工作流权限（默认多数仓库已够）。
+   - **或**：Source 选 **Deploy from a branch**，Branch 选 **main**，文件夹 **/ (root)**，保存；等 1～3 分钟再访问。
+4. 线上地址：<https://chenchen-stack.github.io/brief-v2-presentation/>
+
+### 若浏览器显示 404（There isn't a GitHub Pages site here）
+
+- 多半是 **Pages 未开启** 或 **Source 未选对**。请再检查 **Settings → Pages**。
+- 使用 **GitHub Actions** 时，必须能看到 **Actions** 里最近一次部署成功；失败时点进日志查看原因。
+- 公开仓库一般几分钟内生效；可强制刷新或换无痕窗口。
 
 ## 说明
 

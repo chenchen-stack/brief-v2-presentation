@@ -765,6 +765,10 @@
   <div class="ppt-editor-layout" id="ppt-editor-layout">
   <button type="button" class="ppt-sidebar-fab" id="btn-show-sidebar" aria-controls="ppt-sidebar" aria-label="展开侧栏" title="展开侧栏">⟩</button>
   <aside class="ppt-sidebar" id="ppt-sidebar" aria-label="幻灯片列表">
+    <p class="ppt-sidebar__online">
+      <a href="https://chenchen-stack.github.io/brief-v2-presentation/" target="_blank" rel="noopener noreferrer" title="GitHub Pages 公开预览">线上预览</a>
+      <span class="ppt-sidebar__online-url">chenchen-stack.github.io/brief-v2-presentation</span>
+    </p>
     <header class="ppt-sidebar__head">
       <span class="ppt-sidebar__brand">幻灯片</span>
       <button type="button" class="ppt-icon-btn" id="ppt-sidebar-collapse" title="收起侧栏" aria-label="收起侧栏">⟨</button>
@@ -3323,6 +3327,10 @@ SaaS公有云上线快；私有化专有云数据不出域。不讲谁高级，�
     .ppt-editor-layout{display:flex;height:100vh;width:100%;overflow:hidden;background:var(--void,#0a0a0a);--ppt-rail:252px;}
     .ppt-sidebar{flex:0 0 var(--ppt-rail);max-width:min(42vw,var(--ppt-rail));display:flex;flex-direction:column;background:#0c0c0c;border-right:1px solid rgba(255,255,255,.06);z-index:60;transition:flex-basis .28s cubic-bezier(.4,0,.2,1),max-width .28s cubic-bezier(.4,0,.2,1),opacity .2s ease;}
     body.ppt-sidebar-collapsed .ppt-sidebar{flex-basis:0;max-width:0;min-width:0;opacity:0;pointer-events:none;overflow:hidden;border:none;}
+    .ppt-sidebar__online{margin:0;padding:12px 14px 10px;font-size:.62rem;line-height:1.45;border-bottom:1px solid rgba(255,255,255,.06);display:flex;flex-direction:column;gap:4px;}
+    .ppt-sidebar__online a{font-size:.72rem;font-weight:600;color:#f36e21;text-decoration:none;letter-spacing:.02em;}
+    .ppt-sidebar__online a:hover{text-decoration:underline;color:#ff8c4a;}
+    .ppt-sidebar__online-url{font-size:.58rem;color:#5a5a5a;word-break:break-all;}
     .ppt-sidebar__head{display:flex;align-items:center;justify-content:space-between;padding:14px 14px 10px;}
     .ppt-sidebar__brand{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#8a8a8a;}
     .ppt-icon-btn{width:32px;height:32px;display:inline-flex;align-items:center;justify-content:center;border-radius:8px;border:1px solid transparent;background:transparent;color:#a1a1a1;font-size:1rem;line-height:1;cursor:pointer;transition:background .15s,color .15s,border-color .15s;}
